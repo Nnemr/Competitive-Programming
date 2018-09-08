@@ -28,14 +28,14 @@ pii solve(ll sz, ll p) {
 	}
 	int s2 = 0;
 	int ind = 0;
-	while (t<p) {
-		if (t + step <= p) {
+	while (temp<p) {
+		if (temp + step <= p) {
 			i += (dxy[ind].first *step);
 			j += (dxy[ind].second*step);
-			t += step;
+			temp += step;
 		}
 		else {
-			for (t; t < p; ++t) {
+			for (temp; temp < p; ++temp) {
 				i += dxy[ind].first;
 				j += dxy[ind].second;
 			}
