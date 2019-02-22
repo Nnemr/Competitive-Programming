@@ -8,12 +8,10 @@ int main() {
 	for(int i=0; i<n;++i){
 		int x;
 		scanf("%d",&x);
-		if(ind){
-			if(chimps[ind-1] ==x)
-				continue;
+		if(ind && chimps[ind-1]==x)
+			continue;
+		else
 			chimps[ind++]=x;
-		}
-		chimps[ind++]=x;
 	}
 	int q;
 	scanf("%d", &q);
